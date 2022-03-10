@@ -1,0 +1,16 @@
+{
+  "name": "falafele",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/welkenburg/falafele",
+  "author": "ArnoChoussaut <<>>",
+  "license": "MIT",
+  "scripts": {
+    "dev:grid": "ts-node grid.ts"
+  },
+  "dependencies": {
+    "@types/node": "^17.0.21",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  }
+}
