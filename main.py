@@ -12,7 +12,7 @@ def computeNumberDays(NbPlayers, MaxDays, PlayerIncrements):
     
   return counter
 
-output = []
+output = open("out.txt", "a")
 
 with open(inputFile, "r") as cases:
     lines = cases.readlines()
@@ -20,6 +20,6 @@ with open(inputFile, "r") as cases:
     for i in range((len(lines)-1)//2):
         N, M    = map(int,lines[1 + i*2 + 0].split(" "))
         P  = list(map(int, lines[1+ i*2 + 1].split(" ")))
-        output.append(f"Case #{i}: {computeNumberDays(N,M,P)}")
-    for i in output:
-      print(i)
+        output.write(f"Case #{i+1}: {computeNumberDays(N,M,P)}\n")
+
+output.close()
